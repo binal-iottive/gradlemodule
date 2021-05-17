@@ -2,28 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-ext {
-    bintrayRepo = 'gradlemoduledemo'
-    bintrayName = 'gradlemoduledemo'
-
-    publishedGroupId = 'com.example.gradlemoduledemo.gradlemoduledemo'
-    libraryName = 'gradlemoduledemo'
-    artifact = 'gradlemoduledemo'
-
-    libraryDescription = 'ColorPickerPreference for android to create color picker in preferences. Project created as Library'
-
-    siteUrl = 'https://github.com/binal-iottive/gradlemodule'
-    gitUrl = 'https://github.com/binal-iottive/gradlemodule.git'
-
-    libraryVersion = '1.0.0'
-
-    developerId = 'binal-iottive'
-    developerName = 'Binal Patel'
-    developerEmail = 'binal.patel@iottive.com'
-
-    implementation 'com.example.gradlemoduledemo.gradlemoduledemo:gradlemoduledemo:1.0.0'
-}
-
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -58,4 +36,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    implementation project(path: ':gradlemoduledemo')
+    implementation 'com.example.gradlemoduledemo.gradlemoduledemo:gradlemoduledemo:1.0.0'
+
 }
