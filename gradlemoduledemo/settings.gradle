@@ -1,0 +1,4 @@
+include ':gradlemoduledemo'
+include ':mylibrary'
+include ':app'
+rootProject.name = "gradlemoduledemo"
