@@ -27,6 +27,12 @@ ext {
 /*
     implementation 'com.example.gradlemoduledemo.gradlemoduledemo:gradlemoduledemo:1.0.0'*/
 }
+
+uploadArchives {
+    repositories {
+        mavenLocal()
+    }
+}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
