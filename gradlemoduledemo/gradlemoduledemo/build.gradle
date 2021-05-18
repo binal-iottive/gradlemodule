@@ -2,40 +2,10 @@ plugins {
     id 'com.android.library'
 }
 
-ext {
-    bintrayRepo = 'gradlemoduledemo'
-    bintrayName = 'gradlemoduledemo'
-
-    publishedGroupId = 'com.example.gradlemoduledemo'
-    libraryName = 'gradlemoduledemo'
-    artifact = 'gradlemoduledemo'
-
-    libraryDescription = 'ColorPickerPreference for android to create color picker in preferences. Project created as Library'
-
-    siteUrl = 'https://github.com/binal-iottive/gradlemodule'
-    gitUrl = 'https://github.com/binal-iottive/gradlemodule.git'
-
-    libraryVersion = '1.0.0'
-
-    developerId = 'binal-iottive'
-    developerName = 'Binal Patel'
-    developerEmail = 'binal.patel@iottive.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-/*
-    implementation 'com.example.gradlemoduledemo.gradlemoduledemo:gradlemoduledemo:1.0.0'*/
-}
-
-uploadArchives {
-    repositories {
-        mavenLocal()
-    }
-}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
+    publishNonDefault true
 
     defaultConfig {
         minSdkVersion 23
@@ -67,7 +37,3 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
-
-apply plugin: 'com.github.dcendents.android-maven'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
