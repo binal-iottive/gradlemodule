@@ -6,7 +6,7 @@ ext {
     bintrayRepo = 'gradlemoduledemo'
     bintrayName = 'gradlemoduledemo'
 
-    publishedGroupId = 'com.example.gradlemoduledemo.gradlemoduledemo'
+    publishedGroupId = 'com.example.gradlemoduledemo'
     libraryName = 'gradlemoduledemo'
     artifact = 'gradlemoduledemo'
 
@@ -62,6 +62,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
-
+apply plugin: 'com.github.dcendents.android-maven'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
